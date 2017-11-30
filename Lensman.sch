@@ -1,0 +1,148 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:YDI-Badge
+LIBS:lensman
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Battery_Cell BT1
+U 1 1 5A1F55AF
+P 2250 1700
+F 0 "BT1" H 2350 1800 50  0000 L CNN
+F 1 "Battery_Cell" H 2350 1700 50  0000 L CNN
+F 2 "Lensman:BK-913" V 2250 1760 50  0001 C CNN
+F 3 "" V 2250 1760 50  0001 C CNN
+	1    2250 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D2
+U 1 1 5A1F561C
+P 3750 1950
+F 0 "D2" H 3750 2050 50  0000 C CNN
+F 1 "LED" H 3750 1850 50  0000 C CNN
+F 2 "Lensman:LED_D5.0mm" H 3750 1950 50  0001 C CNN
+F 3 "" H 3750 1950 50  0001 C CNN
+	1    3750 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L LED D1
+U 1 1 5A1F56BF
+P 3350 1950
+F 0 "D1" H 3350 2050 50  0000 C CNN
+F 1 "LED" H 3350 1850 50  0000 C CNN
+F 2 "Lensman:LED_D5.0mm" H 3350 1950 50  0001 C CNN
+F 3 "" H 3350 1950 50  0001 C CNN
+	1    3350 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3350 2100 3350 2250
+Wire Wire Line
+	3750 2250 3750 2100
+Wire Wire Line
+	3750 1650 3750 1800
+Wire Wire Line
+	3350 1800 3350 1650
+Wire Wire Line
+	3350 1650 3750 1650
+Wire Wire Line
+	3350 2250 3750 2250
+Connection ~ 3550 1650
+Connection ~ 3550 2250
+Wire Wire Line
+	3550 1650 3550 1550
+Wire Wire Line
+	2250 1500 2250 1400
+Wire Wire Line
+	2250 1800 2250 1950
+$Comp
+L GND #PWR01
+U 1 1 5A1F5969
+P 2250 1950
+F 0 "#PWR01" H 2250 1700 50  0001 C CNN
+F 1 "GND" H 2250 1800 50  0000 C CNN
+F 2 "" H 2250 1950 50  0001 C CNN
+F 3 "" H 2250 1950 50  0001 C CNN
+	1    2250 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR02
+U 1 1 5A1F5983
+P 2250 1400
+F 0 "#PWR02" H 2250 1250 50  0001 C CNN
+F 1 "VCC" H 2250 1550 50  0000 C CNN
+F 2 "" H 2250 1400 50  0001 C CNN
+F 3 "" H 2250 1400 50  0001 C CNN
+	1    2250 1400
+	1    0    0    -1  
+$EndComp
+Text Label 3550 2500 0    60   ~ 0
+VCC
+$Comp
+L GND #PWR03
+U 1 1 5A1F59B4
+P 3550 1550
+F 0 "#PWR03" H 3550 1300 50  0001 C CNN
+F 1 "GND" H 3550 1400 50  0000 C CNN
+F 2 "" H 3550 1550 50  0001 C CNN
+F 3 "" H 3550 1550 50  0001 C CNN
+	1    3550 1550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3550 2250 3550 2500
+$Comp
+L Lensman logo1
+U 1 1 5A1F5B4A
+P 3250 2650
+F 0 "logo1" H 3200 2450 60  0000 C CNN
+F 1 "Lensman" H 3200 2850 60  0000 C CNN
+F 2 "Lensman:LOGO" H 3250 2750 60  0001 C CNN
+F 3 "" H 3250 2750 60  0001 C CNN
+	1    3250 2650
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
